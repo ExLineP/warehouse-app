@@ -1,0 +1,133 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0
+}
+
+.site-title {
+    font-size: 2.5rem
+}
+
+.ag-cell-focus, .ag-cell {
+    border: none !important;
+}
+
+.ag-theme-alpine {
+    margin: auto;
+    width:1210;
+    height:800;
+}
+.table, th, td {
+    font: 1.1em "Fira Sans", sans-serif;
+    border: 1px solid;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.NewOrderButton {
+    background-color: #3f93cc;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    display: block;
+    margin-left: auto;
+    margin-right: 400px;
+    border-radius: 10px;
+}
+
+.NewOrderButton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+.nav {
+    background-color: #388abd;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 0 1rem;
+    font: 1.2em "Fira Sans", sans-serif;
+}
+
+.nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;  
+  display: flex;
+  gap: 1rem
+}
+
+.nav a {
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items:  center;
+    padding: .25rem;
+}
+.nav li.active {
+    background-color: #555;
+}
+
+.nav li:hover {
+    background-color: #777;
+}
+
+
+.Auth-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .Auth-form {
+    width: 420px;
+    box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    background-color: white;
+  }
+  
+  .Auth-form-content {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+  
+  .Auth-form-title {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 24px;
+    color: rgb(34, 34, 34);
+    font-weight: 800;
+  }
+  
+  label {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(34, 34, 34);
+  }
+
+.alert {
+    position: fixed;
+     top: 70%
+}
