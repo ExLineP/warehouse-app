@@ -29,8 +29,10 @@ function Login(props) {
       });
       navigate("/")
     } catch (err) {
-      if (err)
+      if (err && err instanceof AxiosError)
       setError('Неверный логин или пароль');
+      else if (err && err instanceof Error) 
+      setError("Повторите попытку позднее");
 
       console.log("Error: ", err);
     }

@@ -17,7 +17,7 @@ import Order from './pages/Order';
 import { Login } from './pages/Login';
 import NavbarLayout from './components/NavbarLayout';
 import "bootstrap/dist/css/bootstrap.min.css"
-import CreateForm from './components/CreateForm';
+import CreateForm from './components/CreateOrder/CreateForm';
 
 
 function App() {

@@ -9,13 +9,13 @@ const Details = () => {
     const [orders, setOrder] = useState([]);
     const [orderContent, setOrderContent] = useState([]);
     useEffect(() => {
-      axios.get("http://192.168.50.187:3000/orders/" + id ).then((response) => {
+      axios.get("http://localhost:3000/orders/" + id ).then((response) => {
         setOrder(response.data)
       });
-      axios.get("http://192.168.50.187:3000/content/" + id ).then((response) => {
+      axios.get("http://localhost:3000/content/" + id ).then((response) => {
         setOrderContent(response.data)
       });
-      }, []);
+      }, [id]);
   return (
     <table className="table">
 <thead>

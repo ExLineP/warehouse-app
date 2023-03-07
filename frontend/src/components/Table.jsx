@@ -12,12 +12,12 @@ import { useCallback } from "react";
 const Table = () => {
     const [products, setProducts] = useState([]);
       useEffect(() => {
-        axios.get("http://192.168.50.187:3000/orders").then((response) => {
+        axios.get("http://localhost:3000/orders").then((response) => {
           setProducts(response.data)
         });
         }, []);
       let navigate = useNavigate()
-  const CellClickedListener = useCallback( e =>{
+  const CellClickedListener = ( e =>{
     navigate('products/' + e.data.id)
   })
         const columnDefs = [

@@ -29,14 +29,14 @@ app.delete('/products/:id', db.deleteProducts)
 app.get('/orders', db.getOrders)
 app.get('/orders/:id', db.getOrdersById)
 app.post('/orders', db.createOrder)
-app.put('/content/:id', morgan("combined"), db.updateOrders)
+app.patch('/content/:id', db.updateOrders)
 app.delete('/orders/:id', db.deleteOrders)
 //
 app.get('/content/:id', db.getContentsById)
 //
 app.post('/login' , db.login);
 app.post('/register' , db.register);
-
+app.get('/users' , db.getLocation)
 
 
 app.listen(port, () => {
